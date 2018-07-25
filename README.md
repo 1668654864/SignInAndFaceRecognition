@@ -51,7 +51,7 @@ https://console.faceplusplus.com.cn/documents/4888381
 
 | 属性名   | 储存代码 | 类型     | 备注       |
 | -------- | -------- | -------- | ---------- |
-| 班号     | Cname    | byte     | 几班       |
+| 班号     | Cname    | tinyint  | 几班       |
 | 班级代码 | Cnum     | char(20) | 主码       |
 | 所属专业 | Cmajor   | char(20) | 专业表外码 |
 
@@ -63,24 +63,24 @@ https://console.faceplusplus.com.cn/documents/4888381
 | 课程代码   | Rnum     | char(20) | 主码       |
 | 班级       | Rclass   | char(20) | 班级表外码 |
 | 任课老师   | Rteacher | char(20) | 教师表外码 |
-| 应签到次数 | Rsign    | integer  | 默认为0    |
+| 应签到次数 | Rsign    | int      | 默认为0    |
 
-### 签到表(Sign)
+### 签到表(SignIn)
 
 | 属性名 | 储存代码 | 类型     | 备注           |
 | ------ | -------- | -------- | -------------- |
-| 课程头 | Garrange | integer  | 课程安排表外码 |
+| 课程头 | Garrange | int      | 课程安排表外码 |
 | 学号   | Gstudent | char(20) | 学生表外码     |
 
 ### 课程安排表(Arrange)
 
 | 属性名   | 储存代码 | 类型     | 备注                     |
 | -------- | -------- | -------- | ------------------------ |
-| 课程头   | Aid      | integer  | 主码                     |
+| 课程头   | Aid      | int      | 主码                     |
 | 课程代码 | Acourse  | char(20) | 课程表外码               |
-| 周数     | Aweek    | integer  | 哪一周上课               |
-| 星期     | Aday     | integer  | 哪一天上课，限定值为1\~7 |
-| 上课时间 | Atime    | Integer  | 第几节上课，限定值为1\~5 |
+| 周数     | Aweek    | int      | 哪一周上课               |
+| 星期     | Aday     | int      | 哪一天上课，限定值为1\~7 |
+| 上课时间 | Atime    | Int      | 第几节上课，限定值为1\~5 |
 
 ## 每个部分的分工
 1. 签到界面：张欣蓓
@@ -104,38 +104,38 @@ https://console.faceplusplus.com.cn/documents/4888381
 #### 类注释
 ```java
 /*
-类的说明
-@author: 作者
-*/
+ * 类的说明
+ * @author: 作者
+ * */
 Class classname{ ... }
 ```
 示例：
 ```java
 /*
-所有表类的父类，封装数据库操作。
-@author: 刘旭
-*/
+ * 所有表类的父类，封装数据库操作。
+ * @author: 刘旭
+ * */
 Abstract class Database{...}
 ```
 #### 函数注释
 ```java
 /*
-函数功能说明
-@param: 参数名称1: 参数解释
-@param: 参数名称2: 参数解释
-@return 返回值解释
-@author: 作者
-*/
+ * 函数功能说明
+ * @param: 参数名称1: 参数解释
+ * @param: 参数名称2: 参数解释
+ * @return 返回值解释
+ * @author: 作者
+ * */
 ```
 示例：
 ```java
 /*
-根据标识码签到
-@param: idCode: 照片的标识码
-@return:
-返回签到信息，包括(1)是否签到成功(2)学生姓名(3)学生学号(4)所签到课程(5)若签到未成功，原因是什么。
-@author: 朱靖娴
-*/
+ * 根据标识码签到
+ * @param: idCode: 照片的标识码
+ * @return:
+ * 返回签到信息，包括(1)是否签到成功(2)学生姓名(3)学生学号(4)所签到课程(5)若签到未成功，原因是什么。
+ * @author: 朱靖娴
+ * */
 HashMap <String, Object> sign(String idCode){...}
 ```
 ## 各部分必须提供的接口
