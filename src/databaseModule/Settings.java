@@ -10,10 +10,10 @@ class Settings {
 	
 	// 数据库链接
 	// 设定字符集为UTF-8，不使用SSL，服务器时区为GMT+8
-	static final String DB_URL = "jdbc:mysql://localhost/sign_in_database"
-			+ "?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8";
+	static final String DB_URL = "jdbc:mysql://120.79.32.6/sign_in_database"
+			+ "?characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2B8";
 	
 	// 账户和密码，设置成自己的
-	static final String USER = "root";
+	static final String USER = "luciano";
 	static final String PASS = "passwd";
 }

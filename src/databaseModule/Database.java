@@ -12,7 +12,7 @@ public abstract class Database {
 	 * @return: 数据库连接，若连接数据库失败，返回值为null
 	 * @author: 刘旭
 	 */
-	Connection getConection() {
+	static Connection getConection() {
 		Connection conn = null;
 		try {
 			System.out.println("Loading JDBC Driver: " + Settings.JDBC_DRIVER);

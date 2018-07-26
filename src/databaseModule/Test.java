@@ -3,20 +3,12 @@ package databaseModule;
 import java.sql.*;
 
 public class Test {
-	static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
-	static final String DB_URL = "jdbc:mysql://localhost/sign_in_database?"
-			+ "characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8";
-	static final String USER = "root";
-	static final String PASS = "passwd";
 	public static void main(String args[]) throws Exception{
-		Class.forName(JDBC_DRIVER);
-		System.out.println("Connecting to database");
-		Connection conn = null;
-		conn = DriverManager.getConnection(DB_URL, USER, PASS);
+		Connection conn = Database.getConection();
 		System.out.println("Createing statement...");
 		Statement stmt = conn.createStatement();
 		String sql;
-		sql = "SELECT Tname, Tnum, Tsex FROM Teacher";
+		sql = "SELECT tname, tnum, tsex FROM teacher";
 		ResultSet rs = stmt.executeQuery(sql);
 		while (rs.next()) {
 			String name = rs.getString("tname");
