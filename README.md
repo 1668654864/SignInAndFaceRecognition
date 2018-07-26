@@ -105,39 +105,39 @@ https://console.faceplusplus.com.cn/documents/4888381
 
     点“Clone or Download”
 
-    ![1](.\media\Snipaste_2018-07-26_20-11-51.png)
+    ![1](media/Snipaste_2018-07-26_20-11-51.png)
 
     选择“Download ZIP”，下载源代码的压缩包
 
-    ![2](.\media\Snipaste_2018-07-26_20-12-31.png)
+    ![2](.media/Snipaste_2018-07-26_20-12-31.png)
 
 2.  **解压缩**
 
     右键点击刚下载的压缩包，在弹出的菜单里选择“全部解压缩”
 
-    ![3](.\media\Snipaste_2018-07-26_20-13-36.png)
+    ![3](media/Snipaste_2018-07-26_20-13-36.png)
 
     解压缩后得到一个文件夹，点进去
 
-    ![4](.\media\Snipaste_2018-07-26_20-28-01.png)
+    ![4](media/Snipaste_2018-07-26_20-28-01.png)
 
     点进去后还有一个名字一模一样的文件夹，记住这个文件夹，之后要用
 
-    ![5](.\media\Snipaste_2018-07-26_20-29-08.png)
+    ![5](media/Snipaste_2018-07-26_20-29-08.png)
 
 3.  **将源代码导入Eclipse**
 
     打开Eclipse，点击菜单栏的“File”，选择“Open Projects from File System”
 
-    ![6](.\media\Snipaste_2018-07-26_20-16-43.png)
+    ![6](media/Snipaste_2018-07-26_20-16-43.png)
 
     弹出来的对话框中选择“Directory”，
 
-    ![7](.\media\Snipaste_2018-07-26_20-17-06.png)
+    ![7](media/Snipaste_2018-07-26_20-17-06.png)
 
     选择后点“Finish”
 
-    ![8](.\media\Snipaste_2018-07-26_20-17-51.png)
+    ![8](media/Snipaste_2018-07-26_20-17-51.png)
 
     这就将源代码导入了Eclipse
 
@@ -145,19 +145,19 @@ https://console.faceplusplus.com.cn/documents/4888381
 
     将源代码导入Eclipse后，点菜单栏的"Project"，选"Properties"
 
-    ![9](.\media\Snipaste_2018-07-26_20-18-27.png)
+    ![9](media/Snipaste_2018-07-26_20-18-27.png)
 
     按照下图中的顺序操作，点击“Add JARs”
 
-    ![10](.\media\Snipaste_2018-07-26_20-19-59.png)
+    ![10](media/Snipaste_2018-07-26_20-19-59.png)
 
     在弹出的窗口中选下图这个.jar文件，然后点”OK“
 
-    ![11](.\media\Snipaste_2018-07-26_20-20-57.png)
+    ![11](media/Snipaste_2018-07-26_20-20-57.png)
 
     之后会回到刚才的界面，点”Apply and close“完成配置
 
-    ![12](.\media\Snipaste_2018-07-26_20-21-25.png)
+    ![12](media/Snipaste_2018-07-26_20-21-25.png)
 
 
 
