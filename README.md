@@ -109,7 +109,7 @@ https://console.faceplusplus.com.cn/documents/4888381
 
     选择“Download ZIP”，下载源代码的压缩包
 
-    ![2](.media/Snipaste_2018-07-26_20-12-31.png)
+    ![2](media/Snipaste_2018-07-26_20-12-31.png)
 
 2.  **解压缩**
 
