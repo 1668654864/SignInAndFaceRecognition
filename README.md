@@ -88,7 +88,81 @@ https://console.faceplusplus.com.cn/documents/4888381
 3. 识别模块：王浩博
 4. 签到模块：朱靖娴、张砺心
 5. 数据库交互：刘克楠、刘旭
+
+
+## 需要安装的软件
+
+如果已经安装MySQL就不需要装前两个了,下载的时候用迅雷下载比较快
+
+1.  Python 2.7(32-bit): https://www.python.org/ftp/python/2.7.15/python-2.7.15.msi
+2.  MySQL 8.0(32-bit): https://cdn.mysql.com//Downloads/MySQLInstaller/mysql-installer-community-8.0.11.0.msi
+3.  JDK1.8: http://download.oracle.com/otn-pub/java/jdk/8u181-b13/96a7b8442fe848ef90c96a2fad6ed6d1/jdk-8u181-windows-x64.exe?AuthParam=1532569162_f6458cf6d3841e41e9a0bf8e646c66c1
+4.  Eclipse: http://mirrors.neusoft.edu.cn/eclipse/technology/epp/downloads/release/photon/R/eclipse-java-photon-R-win32-x86_64.zip
+
+## 配置方法
+
+1.  **下载源代码**
+
+    点“Clone or Download”
+
+    ![1](.\media\Snipaste_2018-07-26_20-11-51.png)
+
+    选择“Download ZIP”，下载源代码的压缩包
+
+    ![2](.\media\Snipaste_2018-07-26_20-12-31.png)
+
+2.  **解压缩**
+
+    右键点击刚下载的压缩包，在弹出的菜单里选择“全部解压缩”
+
+    ![3](.\media\Snipaste_2018-07-26_20-13-36.png)
+
+    解压缩后得到一个文件夹，点进去
+
+    ![4](.\media\Snipaste_2018-07-26_20-28-01.png)
+
+    点进去后还有一个名字一模一样的文件夹，记住这个文件夹，之后要用
+
+    ![5](.\media\Snipaste_2018-07-26_20-29-08.png)
+
+3.  **将源代码导入Eclipse**
+
+    打开Eclipse，点击菜单栏的“File”，选择“Open Projects from File System”
+
+    ![6](.\media\Snipaste_2018-07-26_20-16-43.png)
+
+    弹出来的对话框中选择“Directory”，
+
+    ![7](.\media\Snipaste_2018-07-26_20-17-06.png)
+
+    选择后点“Finish”
+
+    ![8](.\media\Snipaste_2018-07-26_20-17-51.png)
+
+    这就将源代码导入了Eclipse
+
+4.  **导入额外的包**
+
+    将源代码导入Eclipse后，点菜单栏的"Project"，选"Properties"
+
+    ![9](.\media\Snipaste_2018-07-26_20-18-27.png)
+
+    按照下图中的顺序操作，点击“Add JARs”
+
+    ![10](.\media\Snipaste_2018-07-26_20-19-59.png)
+
+    在弹出的窗口中选下图这个.jar文件，然后点”OK“
+
+    ![11](.\media\Snipaste_2018-07-26_20-20-57.png)
+
+    之后会回到刚才的界面，点”Apply and close“完成配置
+
+    ![12](.\media\Snipaste_2018-07-26_20-21-25.png)
+
+
+
 ## 开发规范
+
 ### 命名规范
 1. 类名所有每个单词的首字母大写。
 例如：`People`, `Student`等
@@ -164,3 +238,5 @@ HashMap <String, Object> sign(String idCode)
 5.  若签到未成功，原因是什么, “problem”:int
 ```
 5. 数据库交互：
+
+   太多了，我不想写。
